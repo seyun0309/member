@@ -1,4 +1,4 @@
-package com.example.member0;
+package com.example.member;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
