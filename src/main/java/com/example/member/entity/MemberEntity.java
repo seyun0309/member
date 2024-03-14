@@ -25,6 +25,15 @@ public class MemberEntity {
 
     public static MemberEntity toMemberentity(MemberDTO memberDTO){
         MemberEntity memberEntity = new MemberEntity();
+        memberEntity.setMemberEmail(memberDTO.getMemberEmail());
+        memberEntity.setMemberPassword(memberDTO.getMemberPassword());
+        memberEntity.setMemberName(memberDTO.getMemberName());
+
+        return memberEntity;
+    }
+
+    public static MemberEntity toUpdateMemberentity(MemberDTO memberDTO){
+        MemberEntity memberEntity = new MemberEntity();
         memberEntity.setId(memberDTO.getId());
         memberEntity.setMemberEmail(memberDTO.getMemberEmail());
         memberEntity.setMemberPassword(memberDTO.getMemberPassword());
